@@ -1,5 +1,5 @@
 # PREVALENT_R2R
-Apply PREVALENT pretrained model on R2R task   
+Apply PREVALENT pretrained model on R2R task. I am clearing the redundant code and classes. But you should still be able to run the code now.   
 
 #### Requirements  
 
