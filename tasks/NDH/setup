@@ -1,0 +1,21 @@
+
+
+export DATA_STORAGE_ACCOUNT=weituo 
+export DATA_STORAGE_CONTAINER=vln 
+DATA_KEYVAULT_NAME=nPyWf/BhYlpfSQsEAEzkSMXouNdFt88DH5Ks9nX2bcsQfqndSx4MddrSPov6TbK9FOqhAY+H/i+Sr+fN0ArURg==
+
+export RESOURCEGROUP_NAME=<resourcegroup_name>
+export SUBSCRIPTION_ID=<subscription_id>
+Export WORKSPACE_NAME=<yourworkspacename>
+
+az login
+az account set –-subscription $SUBSCRIPTION_ID
+az account show
+
+# by convention the admin used the storage account as the name£of the key stored key vault 
+KEY=az keyvault secret show --name $DATA_STORAGE_ACCOUNT \
+  --vault-name $DATA_KEYVAULT_NAME | \
+python -c 'import sys, json; \ sys.stdout.write(json.load(sys.stdin)[0][\" value\"])')
+
+export AZURE_STORAGE_KEY=$KEY
+
