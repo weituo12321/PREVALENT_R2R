@@ -40,7 +40,7 @@ pip install --user tensorboardX
 
 
 #### Train Agent for R2R  
-- 1 We follow the same training schedule as [here](https://github.com/airsplay/R2R-EnvDrop). You can train your own speaker and initial back translation agent. Alternatively, you can use provided [speaker](https://drive.google.com/drive/u/3/folders/1q1W10fn-tnwjmh_LU2o0H6HtsasFE-dD) and [initial agent](https://drive.google.com/drive/u/3/folders/1tVB8hoEuSF2kReRxFS0jucW-Ln-oOnH8). 
+- 1 We follow the same training schedule as [here](https://github.com/airsplay/R2R-EnvDrop). You can train your own speaker and initial back translation agent. Alternatively, you can use provided [speaker](https://drive.google.com/file/d/1vOpHC6NNO5T4j0r0qu1dhEC1ComkYsxS/view?usp=sharing) and [initial agent](https://drive.google.com/file/d/12NZmDGgcoptj6tYK68ceuZnImCbRWqzB/view?usp=sharing). 
 - 2 Make sure you already put pretrained_model under `./pretrained_hug_models/dicadd`, initial agent under `./previous_btbert_agent` and trained speaker under  `snap/speaker/`
 - 3 Run the following example command (change the directory name accordingly)
   
